@@ -1,3 +1,9 @@
+
+<p align="center">
+    <img width="200" src="img.jpg" alt="Totally not AI generated">
+</p>
+
+
 >Welcome to CelestialDynamics Automation! Our name is synonymous with innovation, quality, and automation.
 >
 >We've been thriving in the automation industry for years now and are proud to be one of the most respected companies in the sector. Our focus is on providing the best automated solutions for interstellar exploration, resource management, and much more.
