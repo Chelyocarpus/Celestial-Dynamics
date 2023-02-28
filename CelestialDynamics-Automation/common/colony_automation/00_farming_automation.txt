@@ -1,0 +1,29 @@
+# /* Overwrites original file */
+automate_farming_planet = {
+	category = "planet_automation_designation_construction"
+
+	available = {
+		has_farming_designation = yes
+	}
+
+	prio_districts = {
+		district_farming
+		district_rw_farming
+		district_farming_uncapped
+		district_hab_housing
+	}
+
+	buildings = {
+		1 = {
+			building = building_capital
+		}
+
+		2 = {
+			building = building_food_processing_facility
+		}
+        # Handled by crisis_exceptions.txt
+		#3 = {
+		#	building = building_hydroponics_farm
+		#}
+	}
+}

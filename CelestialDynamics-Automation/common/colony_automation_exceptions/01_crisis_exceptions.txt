@@ -1,0 +1,128 @@
+# /* Building */
+automate_food_deficit_management_building = {
+	available = {
+		owner = { has_monthly_income = { resource = food value < 1 } }
+		free_building_slots > 0
+	}
+
+	emergency = yes
+	category = "planet_automation_food_management"
+
+	buildings = {
+		hydroponics_farm = {
+			building = building_hydroponics_farm
+			available = { # /* you really want to be building science/unity buildings instead of farms on those designations */
+				has_research_designation = no
+				has_unity_designation = no
+				has_fortress_designation = no
+				# /* Fill the available slots first */
+				NOT = { has_available_jobs = agri_drone }
+				# /* Dont build two at the same time */
+				NOT = { has_building_construction = building_hydroponics_farm }
+				#has_farming_designation = yes
+				# /* Limit to farming designation? */
+				# /* Check for enough resources and for positive energy income? */
+				# /* Check for unemployed to be at least 0, better 1 */
+			}
+		}
+	}
+}
+
+# /* District */
+automate_food_deficit_management_district = {
+	available = {
+        owner = { has_monthly_income = { resource = food value < 1 } }
+		OR = {
+			num_free_districts = { type = district_farming value > 0 }
+			num_free_districts = { type = district_rw_farming value > 0 }
+			num_free_districts = { type = district_farming_uncapped value > 0 }
+		}
+		# /* Don't waste resources and space on this if we still have jobs available */
+        NOT = { has_available_jobs = agri_drone }
+	}
+
+	emergency = yes
+	category = "planet_automation_food_management"
+
+	prio_districts = {
+		district_farming
+		district_rw_farming
+		district_farming_uncapped
+	}
+}
+
+# /* Job */
+automate_food_deficit_management_job = {
+	available = {
+		exists = owner
+	}
+
+	empire_wide_emergency = yes
+	category = "planet_automation_food_management"
+
+	job_changes = {
+		agri_drone_reduce = {
+			available = {
+				owner = { has_monthly_income = { resource = food value > 10 } } # /* Add some buffer between decrease and increase so it doesn't fluctuate as much */
+				# /* Do we have any other jobs available for this worker? Otherwise it's pointless */
+                OR = {
+                    has_available_jobs = brain_drone
+		            has_available_jobs = calculator
+		            has_available_jobs = artisan_drone
+		            has_available_jobs = fabricator
+		            has_available_jobs = alloy_drone
+		            has_available_jobs = chemist_drone
+		            has_available_jobs = translucer_drone
+		            has_available_jobs = gas_refiner_drone
+		            has_available_jobs = crystal_mining_drone
+		            has_available_jobs = mote_harvesting_drone
+		            has_available_jobs = gas_extraction_drone
+		            has_available_jobs = mining_drone
+		            has_available_jobs = technician_drone
+                }
+			}
+
+			job = agri_drone
+			amount = -1
+		}
+
+		agri_drone_increase = {
+			available = {
+				owner = { has_monthly_income = { resource = food value < 1 } }
+			}
+
+			job = agri_drone
+			amount = 1
+		}
+	}
+}
+
+automate_catalytic_processing = {
+	available = {
+		owner = { has_valid_civic = civic_machine_catalytic_processing }
+	}
+
+	emergency = yes
+	category = "planet_automation_catalytic_processing"
+}
+
+# /* Aim for enough food for conversion & Bio-Reactor
+# Then convert to Industrial / Forge for Alloy Production
+# Reduce priority of other jobs 
+# Either change colony type or add a switch if Industrial Districts => Farming Disctricts */
+
+# /* Relevantes Zeug
+
+# Food 
+# Alloy
+
+# Farming Districts
+# Industrial Districts
+# Housing Districts (for building space)
+
+# Hydroponics Farm
+# Alloy Foundries 
+# Bio-Reactor
+
+# Agri Drone
+# Alloy Drone */
