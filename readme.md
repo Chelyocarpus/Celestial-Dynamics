@@ -12,4 +12,4 @@
 >
 >Our reputation speaks for itself. We are known for our exceptional customer service and attention to detail. We pride ourselves on providing turn-key solutions that are tailored to your specific needs. With us, you can trust that your project will be completed on time and on budget.
 >
->Join us on the forefront of the automation revolution. Whether you're looking to expand your empire or explore the farthest reaches of the galaxy, CelestialDynamics s here to help. With our innovative technologies and dedicated team, you can be confident that you'll always stay ahead of the competition.
+>Join us on the forefront of the automation revolution. Whether you're looking to expand your empire or explore the farthest reaches of the galaxy, CelestialDynamics is here to help. With our innovative technologies and dedicated team, you can be confident that you'll always stay ahead of the competition.
