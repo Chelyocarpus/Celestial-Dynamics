@@ -14,12 +14,15 @@
 >Join us on the forefront of the automation revolution. Whether you're looking to expand your empire or explore the farthest reaches of the galaxy, CelestialDynamics is here to help. With our innovative technologies and dedicated team, you can be confident that you'll always stay ahead of the competition.
 
 # Features
+- Added more options for Planet Designations
+- Added more options for Planet Automation
+- Slightly modified some standard Planet Designations
+
 ## Planet Designations
-#### • Added more options for Planet Designations
+[Picture with designations]
 
 ## Planet Automation
-#### • Added more options for Planet Automation
-[Add picture with options]
+[Picture with options]
 
 #### • Force Industrial Districs on Agri-Worlds
 
@@ -28,3 +31,10 @@
 </p>
 
 Vanilla AI doesn't usually build (due to a technical restriction) other districs except the one that fits the designation best. So on *Agri-Worlds* it's only able to build *Farming Districts*. With this option it will build *Industrial Districts* (currently limited to *Industrial Districts*) on *Agri-Worlds* once all *Farming Districs* have been built. This can be useful for nations with the civic *Catalytic Processing*.
+
+## Compatibility
+Currently not compitable with other mods that overwrite the following files:
+- 00_farming_automation.txt
+- 00_scripted_triggers_ai.txt
+
+While i aim to overwrite as few vanilla files as possible some modifications can't be done otherwise. Still, with some additional changes to this mod no overwrites should be needed anymore.
