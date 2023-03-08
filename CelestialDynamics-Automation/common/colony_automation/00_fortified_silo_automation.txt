@@ -1,0 +1,54 @@
+automate_fortified_silo_planet = {
+	category = "planet_automation_designation_construction"
+
+	available = {
+		has_designation = col_fortified_silo
+        #NOT = { has_planet_flag ="fortified_silo_balanced_edition" }
+        #NOT = { has_planet_flag ="fortified_silo_city_edition" }
+        #NOT = { has_planet_flag ="fortified_silo_industrial_edition" }
+		#has_planet_flag ="fortified_silo_generator_edition"
+        #NOT = { has_planet_flag ="fortified_silo_mineral_edition" }
+        #NOT = { has_planet_flag ="fortified_silo_farming_edition" }
+	}
+
+	prio_districts = {
+		district_generator
+		district_rw_generator
+		district_generator_uncapped
+	}
+
+	buildings = {
+		1 = {
+			building = building_capital
+		}
+
+		2 = {
+			building = building_planetary_shield_generator
+			available = {
+				owner = {
+					planetary_shield_generator_upkeep_affordable = yes
+				}
+			}
+		}
+
+		3 = {
+			building = building_resource_silo
+			available = {
+				owner = {
+					resource_silo_upkeep_affordable = yes
+				}
+				num_buildings = { type = building_resource_silo value < 6 }
+			}	
+		}
+
+		4 = {
+			building = building_stronghold
+			available = {
+				owner = {
+					stronghold_upkeep_affordable = yes
+				}
+				num_buildings = { type = building_stronghold value < 5 }
+			}
+    	}
+	}
+}

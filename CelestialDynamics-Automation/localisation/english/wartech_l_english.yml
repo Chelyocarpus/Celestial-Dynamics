@@ -1,0 +1,13 @@
+﻿l_english:
+ planet_automation_food_management:0 "£food£ Manage Food Deficit"
+ planet_automation_food_management_desc:0 "Test"
+ planet_automation_energy_management:0 "£energy£ Manage Energy Deficit"
+ planet_automation_energy_management_desc:0 "Test"
+ planet_automation_force_industrial_districts_on_farming_planets:0 "Industrial Districts on Agri-Worlds"
+ planet_automation_force_industrial_districts_on_farming_planets_desc:0 "Force AI to fill up any leftover Districts on §EAgri-Worlds§T with Industrial Districts.\n\n§LThe superior intellect of our AI can be harnessed to optimize your output by directing it to fill any unclaimed land on your Agri-Worlds with specialized Industrial Districts. This will increase the efficiency and productivity of your infrastructure and ensure that your economy remains robust and prosperous. -CelestialDynamics§T"
+ planet_automation_catalytic_processing:0 "Catalytic Processing"
+ planet_automation_catalytic_processing_desc:0 "Useful for nations with Catalytic Processing. Will build Industrial Districts on Agri-Worlds when there's enough food income."
+ col_fortified_silo:0 "Fortified Silo World"
+ col_fortified_silo_desc:0 "§LTrust in our AI technology to build you the most secure and reliable fortified resource silos available. -CelestialDynamics§T"
+ col_resource_silo:0 "Resource Silo World"
+ col_resource_silo_desc:0 "§LOur AI technology ensures precision in every aspect of the construction process, resulting in silos that are reliable and efficient. -CelestialDynamics§T"

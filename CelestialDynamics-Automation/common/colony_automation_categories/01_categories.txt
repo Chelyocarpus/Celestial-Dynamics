@@ -1,13 +1,40 @@
+#planet_automation_improved_rare_resources = {
+#	available = {
+#		exists = owner
+#	}
+	# /* Make it so AI doesnt build two buildings back to back without any unemployed pops (=check job availabilty) and negative energy income */
+#}
+
 planet_automation_food_management = {
 	available = {
-		exists = owner
-		owner = { country_uses_food = yes }
+		#exists = owner
+		#owner = { country_uses_food = yes }
+		owner = { is_ai = yes }
 	}
 }
 
-planet_automation_catalytic_processing = {
+planet_automation_energy_management = { 
 	available = {
-		exists = owner
-		owner = { has_valid_civic = civic_machine_catalytic_processing }
+		#exists = owner
+		#owner = { country_uses_food = yes }
+		owner = { is_ai = yes }
 	}
 }
+
+# /* There's no way to control how many districs of each type the AI builds except as a workaround via an emergency */
+planet_automation_force_industrial_districts_on_farming_planets = { }
+
+#planet_automation_force_energy_districts_on_farming_planets = { }
+
+#planet_automation_food_to_alloy = { }
+
+#planet_automation_food_to_energy = { }
+
+planet_automation_catalytic_processing = {
+	available = {
+		#exists = owner
+		#owner = { country_uses_food = yes }
+		owner = { is_ai = yes }
+	}
+}
+

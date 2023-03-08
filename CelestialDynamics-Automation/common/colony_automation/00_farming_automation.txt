@@ -1,4 +1,12 @@
 # /* Overwrites original file */
+# /* 
+# Observations:
+# - It seems to build the first possible building in the list, from top to down
+# - So put the most important/special buildings at the top
+# - Which also means that a building doesn't need multiple entries
+# - It will only build once available jobs have reached 0, even if the building doesn't require jobs 
+# */
+
 automate_farming_planet = {
 	category = "planet_automation_designation_construction"
 
@@ -10,6 +18,7 @@ automate_farming_planet = {
 		district_farming
 		district_rw_farming
 		district_farming_uncapped
+        # /* I guess they added district_hab_housing because there's no farming on Habitats. */
 		district_hab_housing
 	}
 
@@ -20,10 +29,35 @@ automate_farming_planet = {
 
 		2 = {
 			building = building_food_processing_facility
+			available = {
+				owner = {
+					food_processing_facility_upkeep_affordable = yes
+				}
+				OR = {
+					num_buildings = { type = building_hydroponics_farm value > 0 }
+					num_districts = { type = district_farming value > 0 }
+				}
+			}
 		}
-        # Handled by crisis_exceptions.txt
-		#3 = {
-		#	building = building_hydroponics_farm
-		#}
+
+		3 = { 
+			building = building_bio_reactor
+			available = {
+				owner = { 
+					bio_reactor_upkeep_affordable = yes # /* Custom scripted trigger */
+					has_authority = auth_machine_intelligence
+					# /* Add an option to turn this on/off via planet flag */
+				}
+			}
+		}
+		
+		4 = {
+			building = building_hydroponics_farm
+			available = {
+				owner = {
+					hydroponics_farm_upkeep_affordable = yes
+				}
+			}
+		}
 	}
 }

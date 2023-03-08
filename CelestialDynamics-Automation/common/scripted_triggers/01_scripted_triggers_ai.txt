@@ -1,0 +1,53 @@
+has_unlocked_all_building_slots = {
+    OR = {
+        AND = { 
+            num_buildings = {  type = any  value >= 1 }
+			free_building_slots >= 11
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 2 }
+			free_building_slots >= 10
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 3 }
+			free_building_slots >= 9
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 4 }
+			free_building_slots >= 8
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 5 }
+			free_building_slots >= 7
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 6 }
+			free_building_slots >= 6
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 7 }
+			free_building_slots >= 5
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 8 }
+			free_building_slots >= 4
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 9 }
+			free_building_slots >= 3
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 10 }
+			free_building_slots >= 2
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 11 }
+			free_building_slots >= 1
+        }
+        AND = { 
+            num_buildings = {  type = any  value >= 12 }
+			free_building_slots >= 0
+        }
+    }
+	
+}
