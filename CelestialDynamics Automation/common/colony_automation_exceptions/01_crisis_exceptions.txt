@@ -169,3 +169,39 @@ automate_force_industrial_districts_on_farming_planets = {
 		district_industrial
 	}
 }
+
+automate_agri_districts_on_planets = { 
+	available = {
+		has_modifier = ai_pls_build_agri_districts_thx
+		# /* AI starts building at 0 available jobs so we add a delay to let the AI build other stuff first */
+		num_unemployed > 0
+		free_district_slots > 0 # /* TODO: Check if one of the other resource districs is full before we activate this */
+		# /* Nobody expects unexpected districts */
+		# num_uncleared_blockers  = 0 /* Needs to be more specific */
+	}
+
+	emergency = yes
+	category = "planet_automation_districts_on_planets"
+
+	prio_districts = {
+		district_farming
+	}
+}
+
+automate_mineral_districts_on_planets = { 
+	available = {
+		has_modifier = ai_pls_build_mineral_districts_thx
+		# /* AI starts building at 0 available jobs so we add a delay to let the AI build other stuff first */
+		num_unemployed > 0
+		free_district_slots > 0 # /* TODO: Check if one of the other resource districs is full before we activate this */
+		# /* Nobody expects unexpected districts */
+		# num_uncleared_blockers  = 0 /* Needs to be more specific */
+	}
+
+	emergency = yes
+	category = "planet_automation_districts_on_planets"
+
+	prio_districts = {
+		district_mining
+	}
+}

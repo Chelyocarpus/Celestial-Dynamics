@@ -22,7 +22,13 @@ planet_automation_energy_management = {
 }
 
 # /* There's no way to control how many districs of each type the AI builds except as a workaround via an emergency */
-planet_automation_force_industrial_districts_on_farming_planets = { }
+planet_automation_force_industrial_districts_on_farming_planets = {
+	available = {
+		owner = { is_ai = yes }
+	}
+ }
+
+planet_automation_districts_on_planets = { }
 
 #planet_automation_force_energy_districts_on_farming_planets = { }
 

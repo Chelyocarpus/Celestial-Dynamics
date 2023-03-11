@@ -6,5 +6,5 @@ tags={
 	"Economy"
 	"Fixes"
 }
-name="CelestialDynamics-Automation"
+name="CelestialDynamics Automation"
 supported_version="3.6.1"

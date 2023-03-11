@@ -1,0 +1,29 @@
+ai_pls_build_mineral_districts_thx = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    custom_tooltip = AI_PLS_BUILD_MINERAL_DISTRICTS_THX
+	show_only_custom_tooltip = yes
+}
+
+ai_pls_build_housing_districts_thx = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    custom_tooltip = AI_PLS_BUILD_HOUSING_DISTRICTS_THX
+	show_only_custom_tooltip = yes
+}
+
+ai_pls_build_energy_districts_thx = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    custom_tooltip = AI_PLS_BUILD_ENERGY_DISTRICTS_THX
+	show_only_custom_tooltip = yes
+}
+
+ai_pls_build_industrial_districts_thx = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    custom_tooltip = AI_PLS_BUILD_INDUSTRIAL_DISTRICTS_THX
+	show_only_custom_tooltip = yes
+}
+
+ai_pls_build_agri_districts_thx = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    custom_tooltip = AI_PLS_BUILD_AGRI_DISTRICTS_THX
+	show_only_custom_tooltip = yes
+}

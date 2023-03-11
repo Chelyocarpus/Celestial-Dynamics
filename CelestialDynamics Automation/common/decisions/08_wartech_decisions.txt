@@ -1,0 +1,294 @@
+decision_ai_build_housing_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	# enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			energy = 1
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+		#free_district_slots > 0
+        always = yes
+	}
+
+	effect = {
+        add_modifier = { 
+			modifier = ai_pls_build_housing_districts_thx days = -1 
+		}
+		hidden_effect = { 
+			remove_modifier = "ai_pls_build_mineral_districts_thx"
+			remove_modifier = "ai_pls_build_energy_districts_thx"
+			remove_modifier = "ai_pls_build_industrial_districts_thx"
+			remove_modifier = "ai_pls_build_agri_districts_thx"
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ai_build_industrial_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	# enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			energy = 1
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+        always = yes
+	}
+
+	effect = {
+        add_modifier = {
+			modifier = ai_pls_build_industrial_districts_thx
+			days = -1
+		}
+		hidden_effect = {
+			remove_modifier = "ai_pls_build_mineral_districts_thx"
+			remove_modifier = "ai_pls_build_energy_districts_thx"
+			remove_modifier = "ai_pls_build_housing_districts_thx"
+			remove_modifier = "ai_pls_build_agri_districts_thx"
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ai_build_mineral_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	# enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			energy = 1
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+        always = yes
+	}
+
+	effect = {
+        add_modifier = {
+			modifier = ai_pls_build_mineral_districts_thx
+			days = -1
+		}
+		hidden_effect = {
+			remove_modifier = "ai_pls_build_housing_districts_thx"
+			remove_modifier = "ai_pls_build_energy_districts_thx"
+			remove_modifier = "ai_pls_build_industrial_districts_thx"
+			remove_modifier = "ai_pls_build_agri_districts_thx"
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ai_build_energy_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			energy = 1
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+        always = yes
+	}
+
+	effect = {
+        add_modifier = {
+			modifier = ai_pls_build_energy_districts_thx
+			days = -1
+		}
+		hidden_effect = {
+			remove_modifier = "ai_pls_build_mineral_districts_thx"
+			remove_modifier = "ai_pls_build_housing_districts_thx"
+			remove_modifier = "ai_pls_build_industrial_districts_thx"
+			remove_modifier = "ai_pls_build_agri_districts_thx"
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ai_build_agri_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			energy = 1
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+        always = yes
+	}
+
+	effect = {
+        add_modifier = {
+			modifier = ai_pls_build_agri_districts_thx
+			days = -1
+		}
+		hidden_effect = {
+			remove_modifier = "ai_pls_build_mineral_districts_thx"
+			remove_modifier = "ai_pls_build_energy_districts_thx"
+			remove_modifier = "ai_pls_build_industrial_districts_thx"
+			remove_modifier = "ai_pls_build_housing_districts_thx"
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_ai_dont_build_any_districts = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+        always = yes
+	}
+
+	effect = {
+			remove_modifier = "ai_pls_build_agri_districts_thx"
+			remove_modifier = "ai_pls_build_mineral_districts_thx"
+			remove_modifier = "ai_pls_build_energy_districts_thx"
+			remove_modifier = "ai_pls_build_industrial_districts_thx"
+			remove_modifier = "ai_pls_build_housing_districts_thx"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
