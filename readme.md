@@ -55,7 +55,6 @@ With the option "Fill Up Leftover Districts" you can enable/disable the feature 
 ## Compatibility
 Currently not compitable with other mods that overwrite the following files:
 - 00_farming_automation.txt
-- 00_scripted_triggers_ai.txt
 
 While i aim to overwrite as few vanilla files as possible some modifications can't be done otherwise. Still, with some additional changes to this mod no overwrites should be needed anymore.
 
