@@ -113,10 +113,6 @@ automate_food_deficit_management_job = {
 	}
 }
 
-#automate_food_to_alloy_conversion = { }
-
-#automate_food_to_energy_conversion = { }
-
 # /* This seems to work pretty good too */
 automate_energy_deficit_management = {
 	available = {
@@ -147,29 +143,6 @@ automate_energy_deficit_management = {
 }
 
 # /* Observation in vanilla: If all building slots are full + all farming districts full + no housing needed AI doesnt build any more even if there are unemployed pops */
-automate_force_industrial_districts_on_farming_planets = { 
-	available = {
-		has_designation = col_farming
-		num_free_districts = { type = district_farming value = 0 }
-		# /* Nobody expects unexpected farming districts */
-		# num_uncleared_blockers  = 0 /* Needs to be more specific */
-		OR = { 
-			# /* All available farming and nexus districts have been constructed and there's nothing left */
-			num_free_districts = { type = district_nexus value = 0 }
-			# /* Built all available farming districts and unlocked all building slots */
-			has_unlocked_all_building_slots = yes # /* Custom scripted trigger, probably performance heavy*/
-		}
-}
-
-	emergency = yes
-	category = "planet_automation_force_industrial_districts_on_farming_planets"
-
-
-	prio_districts = {
-		district_industrial
-	}
-}
-
 automate_agri_districts_on_planets = { 
 	available = {
 		has_modifier = ai_pls_build_agri_districts_thx
@@ -185,6 +158,8 @@ automate_agri_districts_on_planets = {
 
 	prio_districts = {
 		district_farming
+		district_rw_farming
+		district_farming_uncapped
 	}
 }
 
@@ -203,5 +178,72 @@ automate_mineral_districts_on_planets = {
 
 	prio_districts = {
 		district_mining
+		district_hab_mining
+		district_mining_uncapped
+	}
+}
+
+automate_generator_districts_on_planets = { 
+	available = {
+		has_modifier = ai_pls_build_generator_districts_thx
+		# /* AI starts building at 0 available jobs so we add a delay to let the AI build other stuff first */
+		num_unemployed > 0
+		free_district_slots > 0 # /* TODO: Check if one of the other resource districs is full before we activate this */
+		# /* Nobody expects unexpected districts */
+		# num_uncleared_blockers  = 0 /* Needs to be more specific */
+	}
+
+	emergency = yes
+	category = "planet_automation_districts_on_planets"
+
+	prio_districts = {
+		district_generator
+		district_hab_energy
+		district_generator_uncapped
+		district_rw_generator
+	}
+}
+
+automate_housing_districts_on_planets = { 
+	available = {
+		has_modifier = ai_pls_build_housing_districts_thx
+		# /* AI starts building at 0 available jobs so we add a delay to let the AI build other stuff first */
+		num_unemployed > 0
+		free_district_slots > 0 # /* TODO: Check if one of the other resource districs is full before we activate this */
+		# /* Nobody expects unexpected districts */
+		# num_uncleared_blockers  = 0 /* Needs to be more specific */
+	}
+
+	emergency = yes
+	category = "planet_automation_districts_on_planets"
+
+	prio_districts = {
+		district_nexus
+		district_city
+		district_hive
+		district_arcology_housing
+		district_rw_city
+	}
+}
+
+automate_industrial_districts_on_planets = { 
+	available = {
+		has_modifier = ai_pls_build_industrial_districts_thx
+		# /* AI starts building at 0 available jobs so we add a delay to let the AI build other stuff first */
+		num_unemployed > 0
+		free_district_slots > 0 # /* TODO: Check if one of the other resource districs is full before we activate this */
+		# /* Nobody expects unexpected districts */
+		# num_uncleared_blockers  = 0 /* Needs to be more specific */
+	}
+
+	emergency = yes
+	category = "planet_automation_districts_on_planets"
+
+	prio_districts = {
+		district_industrial
+		district_hab_industrial
+		district_rw_industrial
+		district_arcology_arms_industry
+		district_arcology_civilian_industry
 	}
 }
