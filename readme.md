@@ -61,3 +61,8 @@ While i aim to overwrite as few vanilla files as possible some modifications can
 ## Limitations
 - The AI cannot remove any districts nor buildings.
 - The AI can only construct one type of district at a time.
+
+## Contribute
+Whether you're a seasoned developer or just getting started, there are plenty of ways you can help out.
+If you notice any bugs or have any feature requests, please open an [issue](https://github.com/Chelyocarpus/CelestialDynamics/issues) on the repository. This helps me keep track of what needs to be fixed or improved.
+If you want to contribute code directly, you can do so by checking out [what has to be done](https://github.com/Chelyocarpus/CelestialDynamics/issues?q=is%3Aissue+is%3Aopen+label%3AToDo) and opening a [pull request](https://github.com/Chelyocarpus/CelestialDynamics/pulls).
