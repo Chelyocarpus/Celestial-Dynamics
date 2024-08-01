@@ -11,7 +11,7 @@
 >
 >Our reputation speaks for itself. We are known for our exceptional customer service and attention to detail. We pride ourselves on providing turn-key solutions that are tailored to your specific needs. With us, you can trust that your project will be completed on time and on budget.
 >
->Join us on the forefront of the automation revolution. Whether you're looking to expand your empire or explore the farthest reaches of the galaxy, CelestialDynamics is here to help. With our innovative technologies and dedicated team, you can be confident that you'll always stay ahead of the competition.
+>Join us on the forefront of the automation revolution. Whether you're looking to expand your empire or explore the farthest reaches of the galaxy, Celestial Dynamics is here to help. With our innovative technologies and dedicated team, you can be confident that you'll always stay ahead of the competition.
 
 # Features
 - Added more options for Planet Designations
@@ -64,5 +64,5 @@ While i aim to overwrite as few vanilla files as possible some modifications can
 
 ## Contribute
 Whether you're a seasoned developer or just getting started, there are plenty of ways you can help out.
-If you notice any bugs or have any feature requests, please open an [issue](https://github.com/Chelyocarpus/CelestialDynamics/issues) on the repository. This helps me keep track of what needs to be fixed or improved.
-If you want to contribute code directly, you can do so by checking out [what has to be done](https://github.com/Chelyocarpus/CelestialDynamics/issues?q=is%3Aissue+is%3Aopen+label%3AToDo) and opening a [pull request](https://github.com/Chelyocarpus/CelestialDynamics/pulls).
+If you notice any bugs or have any feature requests, please open an [issue](https://github.com/Chelyocarpus/Celestial-Dynamics/issues) on the repository. This helps me keep track of what needs to be fixed or improved.
+If you want to contribute code directly, you can do so by checking out [what has to be done](https://github.com/Chelyocarpus/Celestial-Dynamics/issues?q=is%3Aissue+is%3Aopen+label%3AToDo) and opening a [pull request](https://github.com/Chelyocarpus/Celestial-Dynamics/pulls).
