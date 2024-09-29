@@ -2,7 +2,6 @@ decision_ai_build_housing_districts = {
 	owned_planets_only = yes
 	icon = decision_satellite_in_orbit
 
-	# enactment_time = 720
 	resources = {
 		category = decisions
 		cost = {
@@ -27,11 +26,7 @@ decision_ai_build_housing_districts = {
 
 	potential = {
 		exists = owner
-	}
-
-	allow = {
-		#free_district_slots > 0
-        always = yes
+		NOT = { has_modifier = ai_pls_build_housing_districts_thx }
 	}
 
 	effect = {
@@ -51,11 +46,35 @@ decision_ai_build_housing_districts = {
 	}
 }
 
+decision_ai_dont_build_housing_districts = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		has_modifier = ai_pls_build_housing_districts_thx
+	}
+
+	effect = {
+		remove_modifier = "ai_pls_build_housing_districts_thx"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 decision_ai_build_industrial_districts = {
 	owned_planets_only = yes
 	icon = decision_satellite_in_orbit
 
-	# enactment_time = 720
 	resources = {
 		category = decisions
 		cost = {
@@ -80,10 +99,7 @@ decision_ai_build_industrial_districts = {
 
 	potential = {
 		exists = owner
-	}
-
-	allow = {
-        always = yes
+		NOT = { has_modifier = ai_pls_build_industrial_districts_thx }
 	}
 
 	effect = {
@@ -104,8 +120,34 @@ decision_ai_build_industrial_districts = {
 	}
 }
 
+decision_ai_dont_build_industrial_districts = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		has_modifier = ai_pls_build_industrial_districts_thx
+	}
+
+	effect = {
+		remove_modifier = "ai_pls_build_industrial_districts_thx"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 decision_ai_build_mineral_districts = {
 	owned_planets_only = yes
+	sound = event_administrative_work
 	icon = decision_satellite_in_orbit
 
 	# enactment_time = 720
@@ -133,10 +175,7 @@ decision_ai_build_mineral_districts = {
 
 	potential = {
 		exists = owner
-	}
-
-	allow = {
-        always = yes
+		NOT = { has_modifier = ai_pls_build_mineral_districts_thx }
 	}
 
 	effect = {
@@ -157,8 +196,34 @@ decision_ai_build_mineral_districts = {
 	}
 }
 
+decision_ai_dont_build_mineral_districts = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		has_modifier = ai_pls_build_mineral_districts_thx
+	}
+
+	effect = {
+		remove_modifier = "ai_pls_build_mineral_districts_thx"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 decision_ai_build_energy_districts = {
 	owned_planets_only = yes
+	sound = event_administrative_work
 	icon = decision_satellite_in_orbit
 
 	resources = {
@@ -185,10 +250,7 @@ decision_ai_build_energy_districts = {
 
 	potential = {
 		exists = owner
-	}
-
-	allow = {
-        always = yes
+		NOT = { has_modifier = ai_pls_build_energy_districts_thx }
 	}
 
 	effect = {
@@ -209,8 +271,34 @@ decision_ai_build_energy_districts = {
 	}
 }
 
+decision_ai_dont_build_energy_districts = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_satellite_in_orbit
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1
+		}
+	}
+
+	potential = {
+		has_modifier = ai_pls_build_energy_districts_thx
+	}
+
+	effect = {
+		remove_modifier = "ai_pls_build_energy_districts_thx"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 decision_ai_build_agri_districts = {
 	owned_planets_only = yes
+	sound = event_administrative_work
 	icon = decision_satellite_in_orbit
 
 	resources = {
@@ -237,10 +325,7 @@ decision_ai_build_agri_districts = {
 
 	potential = {
 		exists = owner
-	}
-
-	allow = {
-        always = yes
+		NOT = { has_modifier = ai_pls_build_agri_districts_thx }
 	}
 
 	effect = {
@@ -261,8 +346,9 @@ decision_ai_build_agri_districts = {
 	}
 }
 
-decision_ai_dont_build_any_districts = {
+decision_ai_dont_build_agri_districts = {
 	owned_planets_only = yes
+	sound = event_administrative_work
 	icon = decision_satellite_in_orbit
 
 	resources = {
@@ -273,19 +359,11 @@ decision_ai_dont_build_any_districts = {
 	}
 
 	potential = {
-		exists = owner
-	}
-
-	allow = {
-        always = yes
+		has_modifier = ai_pls_build_agri_districts_thx
 	}
 
 	effect = {
-			remove_modifier = "ai_pls_build_agri_districts_thx"
-			remove_modifier = "ai_pls_build_mineral_districts_thx"
-			remove_modifier = "ai_pls_build_energy_districts_thx"
-			remove_modifier = "ai_pls_build_industrial_districts_thx"
-			remove_modifier = "ai_pls_build_housing_districts_thx"
+		remove_modifier = "ai_pls_build_agri_districts_thx"
 	}
 
 	ai_weight = {

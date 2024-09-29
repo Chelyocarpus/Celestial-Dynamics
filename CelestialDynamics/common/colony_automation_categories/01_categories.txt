@@ -21,7 +21,7 @@ planet_automation_energy_management = {
 	}
 }
 
-planet_automation_districts_on_planets = { }
+planet_automation_fill_districts_on_planets = { }
 
 planet_automation_catalytic_processing = {
 	available = {

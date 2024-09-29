@@ -7,4 +7,4 @@ tags={
 	"Fixes"
 }
 name="CelestialDynamics Automation"
-supported_version="3.6.1"
+supported_version="3.8.4"

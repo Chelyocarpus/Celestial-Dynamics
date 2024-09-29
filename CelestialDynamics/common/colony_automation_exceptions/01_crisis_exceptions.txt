@@ -154,7 +154,7 @@ automate_agri_districts_on_planets = {
 	}
 
 	emergency = yes
-	category = "planet_automation_districts_on_planets"
+	category = "planet_automation_fill_districts_on_planets"
 
 	prio_districts = {
 		district_farming
@@ -174,7 +174,7 @@ automate_mineral_districts_on_planets = {
 	}
 
 	emergency = yes
-	category = "planet_automation_districts_on_planets"
+	category = "planet_automation_fill_districts_on_planets"
 
 	prio_districts = {
 		district_mining
@@ -194,7 +194,7 @@ automate_generator_districts_on_planets = {
 	}
 
 	emergency = yes
-	category = "planet_automation_districts_on_planets"
+	category = "planet_automation_fill_districts_on_planets"
 
 	prio_districts = {
 		district_generator
@@ -215,7 +215,7 @@ automate_housing_districts_on_planets = {
 	}
 
 	emergency = yes
-	category = "planet_automation_districts_on_planets"
+	category = "planet_automation_fill_districts_on_planets"
 
 	prio_districts = {
 		district_nexus
@@ -237,7 +237,7 @@ automate_industrial_districts_on_planets = {
 	}
 
 	emergency = yes
-	category = "planet_automation_districts_on_planets"
+	category = "planet_automation_fill_districts_on_planets"
 
 	prio_districts = {
 		district_industrial

@@ -5,6 +5,7 @@ col_fortified_silo = {
 	potential = {
 		exists = owner
 		is_special_colony_type = no
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -64,6 +65,7 @@ col_resource_silo = {
 	potential = {
 		exists = owner
 		is_special_colony_type = no
+		is_capital = no 
 	}
 
 	planet_modifier = {
